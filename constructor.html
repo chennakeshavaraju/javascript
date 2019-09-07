@@ -1,0 +1,21 @@
+<script>
+    var vehicle={
+    brand:"Tvs",
+        name:"apache",
+        model:2014,
+    }
+    console.log(vehicle);
+    var xyz=Object.assign({},vehicle);
+    vehicle.cost="varun";
+    console.log(vehicle);
+    xyz.brand="benz";
+    xyz.name="keshav";
+    console.log(xyz)
+    delete xyz.name;
+    xyz.mode="raju";
+    delete vehicle.brand;
+</script>
+
+
+
+
