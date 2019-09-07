@@ -1,0 +1,43 @@
+<script>
+    var students=[
+        {
+            "id":100,"name":"keshav","per":80
+        },
+        {
+            "id":101,"name":"vamshi","per":60
+        },
+        {
+            "id":102,"name":"akhil","per":30
+        },
+        {
+            "id":103,"name":"sony","per":75
+        },
+        {
+            "id":104,"name":"ramya","per":20
+        },
+        {
+            "id":105,"name":"sai","per":55
+        },
+        {
+            "id":106,"name":"avnish","per":91
+        },
+        {
+            "id":107,"name":"rohit","per":28
+        },
+        {
+            "id":108,"name":"sharan","per":68
+        },
+        {
+            "id":109,"name":"pavan","per":83
+        },
+        
+    ]
+    function pass(){
+      var abc=  students.every(function(val,index){
+            return val<35;
+        })
+            console.log(abc)    
+    }
+    pass()
+    
+</script>
