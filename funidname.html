@@ -1,0 +1,21 @@
+<script>
+    var student=[
+        {
+            "id":104,"name":"ramya","per":20
+        },
+        {
+            "id":105,"name":"sai","per":55
+        },
+        {
+            "id":106,"name":"avnish","per":91
+        },
+        
+    ]
+    function idname(){
+        var abc=student.map(function(val,index){
+            return{"id":val.id,"name":val.name}
+        })
+        console.log(abc)
+    }
+    idname();
+</script>
