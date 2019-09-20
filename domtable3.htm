@@ -1,0 +1,120 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<table class="table  table-bordered">
+        <thead>
+            <tr>
+                <th>s.id</th>
+                <th>s.name</th>
+                <th>s.per</th>
+                
+            </tr>
+        </thead>
+        <tbody id="row">
+    
+        </tbody>
+    </table>
+    
+<button onclick="tableRow()" style="width:200px;display:block;height: 50px;background: brown;color:black;font-size: 30px;border: 1px solid wheat;margin-top:100px;margin-left:500px">clickhere</button>
+    
+<script>
+var students=[
+{
+    "id":101,
+    "name":"raghu",
+    "per":"10%"
+
+},
+{
+    "id":102,
+    "name":"ram",
+    "per":"20%"
+
+},
+{
+    "id":103,
+    "name":"rahul",
+    "per":"30%"
+
+},
+{
+    "id":104,
+    "name":"ramesh",
+    "per":"35%"
+
+},
+{
+    "id":105,
+    "name":"ravi",
+    "per":"45%"
+
+},
+{
+    "id":106,
+    "name":"raghav",
+    "per":"50%"
+
+},
+{
+    "id":107,
+    "name":"rohit",
+    "per":"60%"
+
+},
+{
+    "id":108,
+    "name":"rakesh",
+    "per":"70%"
+
+},
+{
+    "id":109,
+    "name":"rajesh",
+    "per":"85%"
+
+},
+{
+    "id":110,
+    "name":"raj",
+    "per":"28%"
+
+}
+];
+
+function tableRow(){
+     students.forEach(function(student){
+         var std=student.id;
+         var sname=student.name;
+         var sper=student.per;
+
+         var trelem="<tr>"+
+            "<td>"+std+"</td>"+
+            "<td>"+sname+"</td>"+
+            "<td>"+sper+"</td>"+
+            "</tr>";
+        
+     document.getElementById("row").innerHTML+=trelem;    
+     });
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
