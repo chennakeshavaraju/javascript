@@ -1,0 +1,111 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div id="card">
+
+</div>
+    
+<button class="btn bg-danger my-5" onclick="Card()" >clickhere</button>
+    
+<script>
+ var students=[
+{
+    "id":101,
+    "name":"keshav",
+    "per":"89"
+
+},
+{
+    "id":102,
+    "name":"Akhil",
+    "per":"70"
+
+},
+{
+    "id":103,
+    "name":"rahul",
+    "per":"75"
+
+},
+{
+    "id":104,
+    "name":"vamshi",
+    "per":"55"
+
+},
+{
+    "id":105,
+    "name":"ravi",
+    "per":"45"
+
+},
+{
+    "id":106,
+    "name":"vicky",
+    "per":"66"
+
+},
+{
+    "id":107,
+    "name":"rohit",
+    "per":"60"
+
+},
+{
+    "id":108,
+    "name":"pavan",
+    "per":"70"
+
+},
+{
+    "id":109,
+    "name":"lokesh",
+    "per":"80"
+
+},
+{
+    "id":110,
+    "name":"dinesh",
+    "per":"48"
+
+}
+];
+
+function Card(){
+     students.forEach(function(student){
+         var std=student.id;
+         var sname=student.name;
+         var sper=student.per;
+
+         var cardelem="<div class='card mt-2'>"+
+            "<div class='card-head bg-dark text-center border border-dark text-white'>"+ 'student id is' + std +"</div>"+
+            "<div class='card-body bg-success text-center border border-dark text-white'>"+ 'His name is' + sname+
+            "</div>"+
+            "<div class='card-footer bg-danger text-center border border-dark text-white'>"+ 'His percentage is' + sper +"</div>"+
+            "</div>";
+        
+     document.getElementById("card").innerHTML+=cardelem;    
+     });
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
